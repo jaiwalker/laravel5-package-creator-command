@@ -1,0 +1,15 @@
+{
+	"name": "jai/create-laravel-package",
+	"description": "artisan command to create laravel package .",
+	"keywords": ["create laravel package", "laravel package"],
+	"license": "MIT",
+	"type": "project",
+	"require": {
+		"laravel/framework": "5.0.*"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "~4.0",
+		"phpspec/phpspec": "~2.1"
+	}
+
+}
