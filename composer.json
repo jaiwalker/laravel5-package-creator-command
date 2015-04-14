@@ -1,5 +1,5 @@
 {
-	"name": "jai/Createpackages",
+	"name": "jai/createpackage",
 	"description": "artisan command to create laravel package .",
 	"keywords": ["create laravel package", "laravel package"],
 	"license": "MIT",
