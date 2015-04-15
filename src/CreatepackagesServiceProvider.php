@@ -41,6 +41,7 @@ class CreatepackagesServiceProvider extends ServiceProvider{
 	public function setupRoutes(Router $router)
 	{
 		$router->group(['namespace' => 'Jai\Contact\Http\Controllers'], function($router)
+
 		{
 			require __DIR__.'/Http/routes.php';
 		});
