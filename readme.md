@@ -1,13 +1,11 @@
-# Laravel 5 Package Template/Skeleton Creator 
+# Laravel 5 Package Template/Skeleton Creator  
+ idea from Laracast Generators
 
 Notes : at this stage very messy need  to clean up 
 
 L5 includes an artisan command to create a laravel specific package out of the box, so this package only needs to add a few things, like:
 
-- `create-package vendorName PackageName `
-
-
-*With one or two more to come.*
+- php artisan  `create-package vendorName PackageName `
 
 ## Usage
 
@@ -48,17 +46,17 @@ You're all set. Run `php artisan` from the console, and you'll see the new comma
 php artisan create-package vendorName PackageName"
 ```
 
-Done !! package will be created with service provider - now all  you need to do is register this  package   with laravle  and autolaod it
+Done !! package will be created with service provider - now all  you need to do is register this  package   with laravel  and autolaod it
 
 example consider you have run 
 ```
-php artisan create-package Jai example"
+php artisan create-package Jai example
 ```
- autoload your created package first:
-  add your package path to composer.json  file in prs-4  so it looks like this 
+## Autoload your created package:
+Add your package path to composer.json  file in prs-4  so it looks like this 
   ```
   "psr-4": {
-  			"App\\": "app/",
+  		"App\\": "app/",
   		  "Jai\\Createpackages\\":"packages/jai/createpackage/src/"
   		  }
   ```
@@ -79,12 +77,12 @@ php artisan create-package Jai example"
    in ExampleServiceProvider.php - in boot function place 
    ```
      dd("Testing package loading");
-     ``
-     after this once you run  you laravel url - you should see this "Testing package loading".
+   ```
+     after this  run laravel url - you should see this "Testing package loading".
      
   
   
-TODO : 
+###TODO : 
 
 -Extend this to load - routes 
 -Extend this to load - config 
